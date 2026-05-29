@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
-    background: linear-gradient(145deg, #e9f0f5 0%, #d9e2ec 100%);
+    background: linear-gradient(145deg, #ffe2ff 0%, #f8e2fd 100%);
     font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     min-height: 100vh;
     display: flex;
@@ -66,7 +67,7 @@ body {
     align-items: center;
     gap: 8px;
     font-weight: 600;
-    color: #1e2f3e;
+    color: #3e1e3e;
     margin-bottom: 0.6rem;
     font-size: 1rem;
 }
@@ -80,12 +81,12 @@ body {
     background: white;
     transition: all 0.2s;
     font-weight: 500;
-    color: #0a2b3e;
+    color: #3e0a3b;
     outline: none;
 }
 
 .age-input:focus {
-    border-color: #1e466e;
+    border-color: #691e6e;
     box-shadow: 0 0 0 3px rgba(30, 70, 110, 0.2);
 }
 
@@ -111,14 +112,14 @@ body {
     gap: 8px;
     cursor: pointer;
     font-weight: 500;
-    color: #1f3b4c;
+    color: #4a1f4c;
     font-size: 1rem;
 }
 
 .radio-option input {
     width: 1.2rem;
     height: 1.2rem;
-    accent-color: #1e466e;
+    accent-color: #6a1e6e;
     cursor: pointer;
 }
 
@@ -139,7 +140,7 @@ body {
 }
 
 .btn-calc:hover {
-    background: #0f3557;
+    background: #ac0abe;
     transform: translateY(-2px);
     box-shadow: 0 12px 20px -8px rgba(1, 10, 103, 0.25);
 }
@@ -151,7 +152,7 @@ body {
 .result-area label {
     display: block;
     font-weight: 600;
-    color: #1e2f3e;
+    color: #010002;
     margin-bottom: 0.6rem;
     font-size: 0.95rem;
 }
@@ -166,12 +167,12 @@ textarea {
     font-family: 'Segoe UI', monospace;
     resize: vertical;
     font-weight: 500;
-    color: #0a2b3e;
+    color: #350a3e;
     line-height: 1.4;
 }
 
 textarea:focus {
-    border-color: #1e466e;
+    border-color: #6a1e6e;
     outline: none;
     background: #ffffff;
 }
