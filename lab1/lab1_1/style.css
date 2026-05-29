@@ -29,7 +29,7 @@ body {
 }
 
 .header {
-    background: #1e466e;
+    background: #cd41a3;
     padding: 1.6rem 2rem;
     color: white;
 }
@@ -123,7 +123,7 @@ body {
 }
 
 .btn-calc {
-    background: #1e466e;
+    background: #ce4aa6;
     color: white;
     border: none;
     width: 100%;
@@ -141,7 +141,7 @@ body {
 .btn-calc:hover {
     background: #0f3557;
     transform: translateY(-2px);
-    box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 12px 20px -8px rgba(1, 10, 103, 0.25);
 }
 
 .btn-calc:active {
