@@ -3,28 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Счетчик ворон</title>
+    <title>Считать ворон</title>
 </head>
 <body>
-    <div class="counter_cont">
-        <div class="header">
-            <h2>Считаем ворон</h2>
-        </div>
+    <form id="crowsForm">
+        <label>Количество ворон: <input type="number" id="num" required></label>
+        <button type="submit">Считать</button>
+    </form>
 
-        <div class="container">
-            <form id="crows">
-                <div class="input">
-                    <input type="number" id="inputNumber" placeholder="Введите число" min="1">
-                </div>
-                <button type="submit" class="count">Считать</button>
-                <div class="result_area">
-                    <label>Наши вороны:</label>
-                    <textarea id="resultTextArea" rows="4"></textarea>
-                </div>
-            </form>
-        </div>
-        <footer>кар-кар</footer>
-    </div>
-    <script src="lab1_2.js"></script>
+    <script>
+        'use strict';
+
+        function getCrowEnding(num) {
+            const lastDigit = num % 10;
+            const lastTwoDigits = num % 100;
+            
+            if (lastTwoDigits >= 11 && lastTwoDigits <= 14) {
+                return 'ворон';
+            }
+            
+            switch (lastDigit) {
+                case 1:
+                    return 'ворона';
+                case 2:
+                case 3:
+                case 4:
+                    return 'вороны';
+                default:
+                    return 'ворон';
+            }
+        }
+
+        document.getElementById('crowsForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const num = parseInt(document.getElementById('num').value);
+            
+            if (!isNaN(num) && num >= 0) {
+                const ending = getCrowEnding(num);
+                alert(`На ветке сидит ${num} ${ending}`);
+            } else {
+                alert('Введите корректное число');
+            }
+        });
+    </script>
 </body>
 </html>
